@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymcana</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+    <h1>GYMCANA</h1>
+
+    <!-- INICIO -->
+    <div id="contenedor" class="contenedor">
+    <p>Por fin ha llegado la hora de ponerte a prueba en esta 3ª gymcana</p>
+    <p>Y no hay mejor forma que hacerlo con un test de...</p>
+    <button class="btnTitulo" id="btnTitulo"><b>De qué será</b></button>
+    
+    <br>
+    <img id="imgf1" class="escondido" src="img/f1.png" style="margin-top: 40px;" height="200px">
+    </div>
+
+    <h2 class="vamos escondido" id="vamos">¡¡VAMOS!!</h2>
+
+    <!-- TEST -->
+    <div id="p1" class="escondido">
+        <h3 class="pregunta">¿Qué circuito es este?</h3>
+        <img class="imgp" src="img/imgp1.png">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp1(1)">Qatar</button>
+        <button class="btnRespuesta" onclick="fp1(2)">Austin (Estados Unidos)</button>
+        <button class="btnRespuesta" onclick="fp1(3)">Las Vegas</button>
+    </div>
+
+    <div id="p2" class="escondido">
+        <h3 class="pregunta">¿Qué circuito es este?</h3>
+        <img src="img/imgp2.png" class="imgp">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp2(1)">Francia</button>
+        <button class="btnRespuesta" onclick="fp2(2)">Mónaco</button>
+        <button class="btnRespuesta" onclick="fp2(3)">Canadá</button>
+    </div>
+
+    <div id="p3" class="escondido">
+        <h3 class="pregunta">¿Quién es este bandido?</h3>
+        <img src="img/imgp3.png" class="imgp">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp3(1)">El Nano</button>
+        <button class="btnRespuesta" onclick="fp3(2)">Leclerc</button>
+        <button class="btnRespuesta" onclick="fp3(3)">Batman</button>
+    </div>
+
+    <div id="p4" class="escondido">
+        <h3 class="pregunta">¿Cuál de estos es de Red Bull?</h3>
+
+        <div class="cntRespuesta">
+            <img src="img/imgp4-1.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp4(1)">Latifi</button>
+        </div>
+        <div class="cntRespuesta">
+            <img src="img/imgp4-2.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp4(2)">Verstappen</button>
+        </div>
+        <div class="cntRespuesta">
+            <img src="img/imgp4-3.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp4(3)">Alonso</button>
+        </div>
+    </div>
+
+    <div id="p5" class="escondido">
+        <h3 class="pregunta">¿Cómo se llama el rey?</h3>
+        <img src="img/imgp5.png" class="imgp">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp5(1)">Mike Krackk</button>
+        <button class="btnRespuesta" onclick="fp5(2)">Mikey Brown</button>
+        <button class="btnRespuesta" onclick="fp5(3)">Matt Watson</button>
+    </div>
+
+    <div id="p6" class="escondido">
+        <h3 class="pregunta">¿Bueno o malo?</h3>
+        <img src="img/imgp6.png" class="imgp">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp6(1)">Bueno</button>
+        <button class="btnRespuesta" onclick="fp6(2)">Malo</button>
+    </div>
+
+    <div id="p7" class="escondido">
+        <h3 class="pregunta">¿Bueno o malo?</h3>
+        <img src="img/imgp7.png" class="imgp">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp7(1)">Bueno</button>
+        <button class="btnRespuesta" onclick="fp7(2)">Malo</button>
+    </div>
+
+    <div id="p8" class="escondido">
+        <h3 class="pregunta">¿Bueno o malo?</h3>
+        <img src="img/imgp8.png" class="imgp">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp8(1)">Bueno</button>
+        <button class="btnRespuesta" onclick="fp8(2)">Malo</button>
+    </div>
+
+    <div id="p9" class="escondido">
+        <h3 class="pregunta">¿A cuál de estos prefieres?</h3>
+
+        <div class="cntRespuesta">
+            <img src="img/imgp9-1.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp9(1)">Carlos Sainz</button>
+        </div>
+        <div class="cntRespuesta">
+            <img src="img/imgp9-2.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp9(2)">Magic Alonso</button>
+        </div>
+        <div class="cntRespuesta">
+            <img src="img/imgp9-3.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp9(3)">Max Verstappen</button>
+        </div>
+    </div>
+
+    <div id="p10" class="escondido">
+        <h3 class="pregunta">¿Cuántas vueltas rápidas tiene el inigualable Mazepin?</h3>
+        <img src="img/imgp10.png" class="imgp">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp10(1)">0. Es malo</button>
+        <button class="btnRespuesta" onclick="fp10(2)">1. Le faltaba equal engines</button>
+        <button class="btnRespuesta" onclick="fp10(3)">2. El inigualable</button>
+    </div>
+
+    <div id="p11" class="escondido">
+        <h3 class="pregunta">¿Quién es mejor estratega?</h3>
+
+        <div class="cntRespuesta">
+            <img src="img/imgp11-1.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp11(1)">Christian Horner</button>
+        </div>
+        <div class="cntRespuesta">
+            <img src="img/imgp11-2.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp11(2)">Fernando Alonso</button>
+        </div>
+        <div class="cntRespuesta">
+            <img src="img/imgp11-3.png">
+            <br>
+            <button class="btnRespuesta" onclick="fp11(3)">Mattia Binotto</button>
+        </div>
+    </div>
+
+    <div id="p12" class="escondido">
+        <h3 class="pregunta">¿Cuál de estas frases llevó a Lobato al éxito?</h3>
+        <img src="img/imgp12.png" class="imgp">
+        <br>
+
+        <button class="btnRespuesta" onclick="fp12()">"Mi sensor de lluvia me dice que está empezando a llover aquí"</button>
+        <button class="btnRespuesta" onclick="fp12()">"Caramba que bonita vista"</button>
+        <button class="btnRespuesta" onclick="fp12()">"Está oscurísimo"</button>
+        <button class="btnRespuesta" onclick="fp12()">"Tenemos a flavio que nos peina un poquito"</button>
+        <button class="btnRespuesta" onclick="fp12()">"Invisible como Valtteri Bottas"</button>
+    </div>
+
+    <img src="img/final.jpg" class="escondido" id="fotoFinal">
+
+    <script src="preguntas.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

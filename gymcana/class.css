@@ -1,0 +1,105 @@
+.contenedor{
+    text-align: center;
+}
+
+.escondido{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.btnTitulo{
+    height: 30px;
+    width: 100px;
+    border: double 4px #f00;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.btnTitulo:hover{
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
+
+.vamos{
+    font-size: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+@keyframes spin {
+    100%{transform: rotate(3600deg);}
+}
+
+.imgf1{
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: 7;
+}
+
+/* PREGUNTAS */
+
+.pregunta{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.imgp{
+    height: 300px;
+}
+
+.btnRespuesta{
+    height: 2em;
+    margin: 10px;
+    border: double 4px #f00;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.btnRespuesta:hover{
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
+
+.cntRespuesta{
+    display: inline-block;
+    border: solid 3px #000;
+    border-radius: 10px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.cntRespuesta img{
+    height: 200px;
+}
+
+@keyframes final {
+    0%{top:0px;}
+    10%{top:80%;
+        transform: rotate(90deg);}
+    20%{top: 0px;}
+    30%{transform: rotate(-225deg);}
+    40%{transform: rotate(3600deg);}
+    50%{border: 15px #f00 dotted;}
+    70%{transform: rotate(-14400deg);}
+    80%{border: none;}
+    100%{transform: rotate(36000deg)}
+    
+}
+
+.fotoFinal{
+    position: absolute;
+    left: calc(50% - 175px);
+    width: 350px;
+    border-radius: 10px;
+    animation-name: final;
+    /*animation-delay: 5s;*/
+    animation-duration: 15s;
+}
